@@ -440,6 +440,11 @@ main {
         width: 76.1% !important;
     }
 }
+@media (max-width: 996px) { 
+    .text-active {
+        width: 76.3% !important;
+    }
+}
 
 @media (max-width: 859px) { 
     .text-active {
