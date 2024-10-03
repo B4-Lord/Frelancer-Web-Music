@@ -19,6 +19,9 @@ body {
 
 .boxdaimagemdabarra {
     display: flex;
+    align-items: center; 
+    margin-left: 5px;
+    /* dois de cima possiveis */
 }
 
 .imagemdabarra {
@@ -26,6 +29,8 @@ body {
     height: 50px;
     background-color: #888;
     border-radius: 50%;
+    margin-left: 5px;  
+    /* de cima possiveis */
 }
 
 nav {
@@ -37,9 +42,13 @@ nav {
 nav ul {
     list-style-type: none;
     display: flex;
+    padding-top: 7px;
     justify-content: space-between; 
     align-items: center;
     padding: 0 150px; 
+    /* ou usar 20px no lugar de 150  */
+    padding-top: 7px;
+    /* gap: 30px; ARRUMAR POIS ESTA MECHENDO NA INPUT DO MEIO E TIRANDO ELA DO CENTRO */
 }
 
 .centered-input {
@@ -51,6 +60,9 @@ nav ul {
 .input-container {
     display: flex;
     width: 300px; 
+    align-items: center;
+    position: relative;
+    /* 2 de cima possiveis */
 }
 
 .input-with-icon:focus {
@@ -65,22 +77,13 @@ nav ul {
     border: none;
     background-color: rgb(48, 48, 48);
     color: white;
-    width: 100%;
-    height: 50px;
     border-radius: 50px; 
     padding-left: 15px;
+     width: 300px;
+    height: 50px;
 }
 
-nav ul {
-    padding-top: 7px;
-    list-style-type: none;
-    justify-content: flex-end;
-    padding-right: 150px;
-    align-items: center;
-    display: flex;
-    gap: 30px;
-    flex-direction: row;
-}
+
 
 .input-icon {
     width: 40px;
@@ -103,6 +106,7 @@ nav ul li a {
 }
 
 .img1 {
+    
     width: 50px;
     height: 40px;
     filter: brightness(30%);

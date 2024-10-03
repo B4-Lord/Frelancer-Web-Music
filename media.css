@@ -93,3 +93,18 @@
         grid-template-columns: 1fr; 
     }
 }
+
+ @media (max-width: 768px) {
+    nav ul {
+        padding: 0 10px;
+    }
+
+    .input-with-icon {
+        width: 200px; 
+    }
+
+    .imagemdabarra {
+        width: 35px;
+        height: 35px;
+    }
+} 
