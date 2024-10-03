@@ -300,6 +300,11 @@ main {
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
+    text-decoration: none;
+}
+
+.a1 {
+    text-decoration: none;
 }
 
 .elements {
