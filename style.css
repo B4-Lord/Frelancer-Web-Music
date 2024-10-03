@@ -37,32 +37,24 @@ nav {
     height: 68px;
     width: 100vw;
     background-color: black;
-}
-
-nav ul {
-    list-style-type: none;
     display: flex;
-    padding-top: 7px;
-    justify-content: space-between; 
     align-items: center;
-    padding: 0 150px; 
-    /* ou usar 20px no lugar de 150  */
-    padding-top: 7px;
-    /* gap: 30px; ARRUMAR POIS ESTA MECHENDO NA INPUT DO MEIO E TIRANDO ELA DO CENTRO */
+    padding: 0 150px;    
 }
 
 .centered-input {
+    padding-left: 30px;
     flex-grow: 1; 
     display: flex;
     justify-content: center; 
 }
 
 .input-container {
+    margin-left: 30px;
     display: flex;
     width: 300px; 
     align-items: center;
     position: relative;
-    /* 2 de cima possiveis */
 }
 
 .input-with-icon:focus {
@@ -83,7 +75,11 @@ nav ul {
     height: 50px;
 }
 
-
+.divdsaimagens {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
 
 .input-icon {
     width: 40px;
