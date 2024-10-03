@@ -53,7 +53,15 @@ nav ul {
     width: 300px; 
 }
 
+.input-with-icon:focus {
+    outline: none; 
+    background-color: rgb(60, 60, 60); 
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
 .input-with-icon {
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5); 
     border: none;
     background-color: rgb(48, 48, 48);
     color: white;
@@ -61,11 +69,6 @@ nav ul {
     height: 50px;
     border-radius: 50px; 
     padding-left: 15px;
-}
-
-.input-icon {
-    align-self: center;
-    margin-left: -30px;
 }
 
 nav ul {
@@ -80,9 +83,10 @@ nav ul {
 }
 
 .input-icon {
-    width: 20px;
-    height: 20px;
-    margin-left: -30px;
+    width: 40px;
+    height: 40px;
+    margin-left: -45px;
+    border-radius: 50%;
     align-self: center;
     pointer-events: none;
 }
@@ -222,8 +226,6 @@ main {
     background-color: rgba(255, 255, 255, 0.377);
 }
 
-
-
 .box-right {
     position: relative;
     overflow-y: auto;
@@ -232,9 +234,7 @@ main {
     height: 91vh;
     background: linear-gradient(0deg, rgb(19, 19, 19) 70%, rgba(104,0,255,0.562062324929972) 100%);
 }
-
-
-     
+  
 .box-right::-webkit-scrollbar {
     position: fixed;
     width: 12px;   
@@ -263,6 +263,7 @@ main {
 }
 
 .text-active {
+    
     position: fixed;
     background-color: rgb(81, 19, 139) !important; 
     transition: background-color 0.3s ease; 
@@ -288,6 +289,8 @@ main {
 }
 
 .text a:hover {
+    box-shadow: 0 0 5px rgba(104,0,255,0.562062324929972); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
     background-color: rgba(255, 255, 255, 0.267);
 }
 
@@ -313,6 +316,8 @@ main {
 }
 
 .elements:hover {
+    box-shadow: 0 0 5px rgba(104,0,255,0.562062324929972); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
     background-color: rgba(255, 255, 255, 0.377);
 }
 
