@@ -17,44 +17,69 @@ body {
     color: var(--braco);
 }
 
-.boxdaimagemdabarra {
-    display: flex;
-    align-items: center; 
-    margin-left: 5px;
-    /* dois de cima possiveis */
-}
-
-.imagemdabarra {
-    width: 50px;
-    height: 50px;
-    background-color: #888;
-    border-radius: 50%;
-    margin-left: 5px;  
-    /* de cima possiveis */
-}
-
-nav {
+.wrapper {
     height: 68px;
-    width: 100vw;
+    width: 100%;
     background-color: black;
     display: flex;
     align-items: center;
-    padding: 0 150px;    
+    justify-content: space-between; /* Distribui espaço entre os itens da header */
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.logo, .logo2 {
+    padding-left: 20px;
+}
+
+.logo img {
+    width: 40px;
+    height: auto;
+    
+}
+
+.logo2 img {
+    width: 40px;
+    height: auto;
+}
+
+.header2 {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-grow: 1; /* Ocupar espaço restante no wrapper */
 }
 
 .centered-input {
-    padding-left: 30px;
-    flex-grow: 1; 
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    align-items: center;
 }
 
 .input-container {
-    margin-left: 30px;
     display: flex;
-    width: 300px; 
     align-items: center;
     position: relative;
+}
+
+.divdaimagem3 {
+    padding-right: 20px;
+}
+
+.img3 {
+    /* border: 8px solid rgb(26, 26, 26); */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition: 0.2s;
+}
+
+.img3:hover {
+    transform: scale(1.1);
 }
 
 .input-with-icon:focus {
@@ -64,21 +89,26 @@ nav {
     transition: background-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
+.input-with-icon::placeholder {
+    color: var(--braco); 
+    opacity: 1; 
+}
+
 .input-with-icon {
+    font-size: 15px;
     box-shadow: 0 0 2px rgba(255, 255, 255, 0.5); 
     border: none;
     background-color: rgb(48, 48, 48);
     color: white;
     border-radius: 50px; 
     padding-left: 15px;
-     width: 300px;
+    width: 450px;
     height: 50px;
 }
 
-.divdsaimagens {
+.clicaimg {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    align-self: center;
 }
 
 .input-icon {
@@ -86,23 +116,21 @@ nav {
     height: 40px;
     margin-left: -45px;
     border-radius: 50%;
-    align-self: center;
-    pointer-events: none;
+    cursor: pointer;
+    pointer-events: auto; /* Permite que a imagem seja clicável */
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: aliceblue;
+.header3 {
+    display: flex;
+    width: 240px;
 }
 
-.boxdaimagemdabarra img,
-.imgnav {
-    width: 40px; 
-    height: auto;
+.divdsaimagens {
+    display: flex;
+    align-items: center;
 }
 
 .img1 {
-    
     width: 50px;
     height: 40px;
     filter: brightness(30%);
@@ -178,13 +206,18 @@ main {
 }
 
 .simbolus2:hover {
+    background-color: rgb(26, 26, 26);
+    border-radius: 50%;
     filter: brightness(100%);
 }
 
 .simbolus1:hover {
+    background-color: rgb(26, 26, 26);
+    border-radius: 50%;
     filter: brightness(100%);
 }
 .simbolslibrary {
+    gap: 8px;
     display: flex; 
     align-items: center; 
 }
@@ -195,8 +228,9 @@ main {
     font-size: 30px;
     text-decoration: none;
     color: white;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 4px;
+    padding-left: 14px;
+    padding-right: 14px; 
     cursor: pointer; 
 }
 
@@ -280,6 +314,7 @@ main {
     border-radius: 50px;
     margin: 5px;
     margin-top: 10px;
+    margin-bottom: 10px;
     padding-top: 8px;
     padding-left: 15px;
     padding-right: 15px;
@@ -346,9 +381,12 @@ main {
 }
 
 #madeforyou {
-    width: 90%;
     color: white;
     font-size: 22px;
+}
+
+.boxdamade {
+    width: 90%;
 }
 
 #show-all {
@@ -400,4 +438,8 @@ main {
     padding-left: 12px;
     padding-bottom: 12px;
     padding-right: 12px;
+}
+
+footer {
+    
 }
