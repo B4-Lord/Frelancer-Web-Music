@@ -220,6 +220,7 @@ main {
     filter: brightness(100%);
 }
 .simbolslibrary {
+    padding-right: 10px;
     gap: 3px;
     display: flex; 
     align-items: center; 
@@ -460,6 +461,7 @@ footer {
     display: flex;
     align-items: center;
     padding-left: 20px;
+    width: 20%;
 }
 
 .footermusicimg img {
@@ -495,4 +497,108 @@ footer {
 .footerautor:hover {
     filter: brightness(90%);
     text-decoration: underline 1px solid white;
+}
+
+.footer2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.playbackelements {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;  
+}
+
+.playbackimg {
+    display: flex;
+    width: 40px;
+    height: auto;
+}
+
+
+ 
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 700px; 
+    margin: 0 auto;
+}
+
+.time-start, .time-end {
+    color: white;
+    font-size: 12px;
+    margin: 0 10px;
+}
+
+.progress-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    background: #4e4e4e; 
+    border-radius: 5px;
+    outline: none;
+
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+/*
+.progress-bar::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.progress-bar::-webkit-slider-thumb:hover {
+    background-color: #b3b3b3;
+}
+
+.progress-bar::-moz-range-thumb:hover {
+    background-color: #b3b3b3;
+}
+
+.progress-bar::-webkit-slider-runnable-track {
+    background: linear-gradient(green 100%);
+}
+
+.progress-bar::-moz-range-progress {
+    background-color: #ffffff;
+} */
+
+.footer3 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 300px;
+    padding-right: 5%;
+   
+}
+
+.footericons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
 }
