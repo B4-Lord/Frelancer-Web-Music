@@ -12,9 +12,13 @@
     --preto: rgb(15, 15, 15);
 }
 
+html {
+    height: 100%;
+}
 body {
     background-color: black;
     color: var(--braco);
+    height: 100%;
 }
 
 .wrapper {
@@ -23,7 +27,7 @@ body {
     background-color: black;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribui espaço entre os itens da header */
+    justify-content: space-between;
 
 }
 
@@ -51,7 +55,7 @@ body {
     display: flex;
     height: 100%;
     justify-content: center;
-    flex-grow: 1; /* Ocupar espaço restante no wrapper */
+    flex-grow: 1;
 }
 
 .centered-input {
@@ -117,7 +121,7 @@ body {
     margin-left: -45px;
     border-radius: 50%;
     cursor: pointer;
-    pointer-events: auto; /* Permite que a imagem seja clicável */
+    pointer-events: auto;
 }
 
 .header3 {
@@ -160,13 +164,12 @@ main {
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
-    padding-bottom: 10px;
     gap: 10px;
 }
 
 .box-left {
     width: 20vw;
-    height: 91vh; 
+    height: 84vh; 
     background-color: rgb(19, 19, 19);
     border-radius: 8px;
 }
@@ -175,7 +178,7 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center; 
-    width: 90%; 
+    width: 100%; 
 }
 
 .library:hover {
@@ -217,7 +220,7 @@ main {
     filter: brightness(100%);
 }
 .simbolslibrary {
-    gap: 8px;
+    gap: 3px;
     display: flex; 
     align-items: center; 
 }
@@ -263,9 +266,9 @@ main {
 .box-right {
     position: relative;
     overflow-y: auto;
-    border-radius: 8px;
+    border-radius: 10px;
     width: 79vw;
-    height: 91vh;
+    height: 84vh;
     background: linear-gradient(0deg, rgb(19, 19, 19) 70%, rgba(104,0,255,0.562062324929972) 100%);
 }
   
@@ -275,8 +278,9 @@ main {
     height: 12px;  
 }
 
+
 .box-right::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: rgb(19, 19, 19); 
     border-top-right-radius: 10px;    
     border-bottom-right-radius: 10px;
 }
@@ -389,12 +393,17 @@ main {
     width: 90%;
 }
 
+#show-all:hover  {
+    text-decoration: underline 1px solid white;
+    cursor: pointer;
+}
+
 #show-all {
     margin-top: auto;
     color: white;
 }
 
-.madeforyou a:hover {
+#madeforyou:hover {
     text-decoration: underline 2px solid white;
     cursor: pointer;
 }
@@ -441,5 +450,49 @@ main {
 }
 
 footer {
-    
+    width: 100%;
+    height: 89.1px;
+    background-color: black;
+    display: flex;   
+}
+
+.footer1 {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.footermusicimg img {
+    height: 60px;
+    width: 60px;    
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.footernames {
+    display: flex;
+    flex-direction: column; 
+}
+
+.footermusic { 
+    text-decoration: none;
+    color: white;
+}
+
+.footermusic:hover {
+    text-decoration: underline 1px solid white;
+}
+
+.footerautor {
+    text-decoration: none;
+    font-size: 12px;
+    filter: brightness(30%);
+    color: white;
+    transition: 0.2s;
+    margin-top: 5px; 
+}
+
+.footerautor:hover {
+    filter: brightness(90%);
+    text-decoration: underline 1px solid white;
 }
