@@ -1,3 +1,19 @@
+/* HEIGHT */
+
+@media (max-height: 1080px) {
+    .sexosoes {
+        height: 83.9%;
+    }
+}
+
+@media (max-height: 980px) {
+    .sexosoes {
+        height: 82.2%;
+    }
+}
+
+ /* WIDTH */
+ 
 @media (max-width: 1860px) {
     .text-active {
         width: 77.8% !important;

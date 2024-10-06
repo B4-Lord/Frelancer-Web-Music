@@ -721,24 +721,47 @@ footer {
 .playbackelements {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     gap: 20px;  
 }
 
-.playbackimg {
-    display: flex;
-    width: 40px;
-    height: auto;
+.playbackimg:hover {
+    filter: invert(90%);
 }
 
+.playbackimg {
+    transition: 0.2s;
+    display: flex;
+    height: auto;
+    filter: invert(30%);
+    padding-bottom: 10px;
+}
 
+.centerbutonpause:hover {
+    transform: scale(1.1);
+}
+.centerplaybackimg {
+    display: flex;
+    height: auto;
+    padding-bottom: 9px;
+}
+
+.centerbutonpause {
+    background-color: grey;
+    border-radius: 50%;
+    padding-top: 8px;
+    padding-left: 11px;
+    padding-right: 8px;
+    margin-bottom: 10px;
+
+}
  
-
 .progress-container {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 80%;
+    justify-content: center;
     max-width: 700px; 
     margin: 0 auto;
 }
@@ -752,12 +775,11 @@ footer {
 .progress-bar {
     -webkit-appearance: none;
     appearance: none;
-    width: 100%;
+    width: 80%;
     height: 4px;
     background: #4e4e4e; 
     border-radius: 5px;
     outline: none;
-
     cursor: pointer;
 }
 
