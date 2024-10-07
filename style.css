@@ -28,7 +28,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .header {
@@ -438,7 +437,6 @@ main {
 .sexosoes::-webkit-scrollbar-thumb {
     background: #888;     
     border-bottom-right-radius: 10px;
-    
 }
 
 .playlistsearch {
@@ -453,7 +451,6 @@ main {
 }
 
 .playlistsearch2 {
-    
     padding-left: 10px;
     display: flex;
     flex-direction: column;
@@ -754,7 +751,6 @@ footer {
     padding-left: 11px;
     padding-right: 8px;
     margin-bottom: 10px;
-
 }
  
 .progress-container {
@@ -825,7 +821,6 @@ footer {
     flex-direction: row;
     width: 300px;
     padding-right: 5%;
-   
 }
 
 .footericons {

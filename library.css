@@ -15,6 +15,7 @@
 html {
     height: 100%;
 }
+
 body {
     background-color: black;
     color: var(--braco);
@@ -438,7 +439,6 @@ main {
 .sexosoes::-webkit-scrollbar-thumb {
     background: #888;     
     border-bottom-right-radius: 10px;
-    
 }
 
 .playlistsearch {
@@ -453,7 +453,6 @@ main {
 }
 
 .playlistsearch2 {
-    
     padding-left: 10px;
     display: flex;
     flex-direction: column;
@@ -545,8 +544,7 @@ main {
 .imgnameinfos2 {
     border-radius: 50%;
     padding-right: 5px;
-    width: 30px;
-    
+    width: 30px; 
 }
 
 .font3 {
@@ -570,9 +568,7 @@ main {
 .box-right2 {
     display: flex;
     width: 100%;
-    padding: 20px;
-    
-    
+    padding: 20px;    
 }
 
 .box-right2-menu {
@@ -580,7 +576,6 @@ main {
     align-items: center;
     width: 100%;
     gap: 25px;
-    
 }
 
 .box-right2-play1 {
@@ -713,7 +708,6 @@ main {
 }
 
 .musicsinplaylist {
-
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -794,7 +788,6 @@ footer {
 .footernames {
     display: flex;
     flex-direction: column; 
-    
 }
 
 .footermusic { 
@@ -863,7 +856,6 @@ footer {
     padding-left: 11px;
     padding-right: 8px;
     margin-bottom: 10px;
-
 }
  
 
@@ -935,7 +927,6 @@ footer {
     flex-direction: row;
     width: 300px;
     padding-right: 5%;
-   
 }
 
 .footericons {
