@@ -307,6 +307,8 @@ main {
     display: flex;
     gap: 10px;
     padding-left: 10px;
+    padding-right: 10px;
+    flex-wrap: wrap;
 }
 
 .liberus2 {

@@ -596,6 +596,7 @@ main {
     padding: 11px;
     width: 40px;
     height: 40px;
+    transition: 0.2s;
 }
 
 .box-right2-play1:hover {
@@ -603,6 +604,7 @@ main {
 }
 
 .box-right2-shuffle {
+    transition: 0.2s;
     width: 30px;
     filter: invert(40%);
 }
@@ -614,6 +616,7 @@ main {
 .box-right2-more{
     width: 35px;
     filter: invert(40%);
+    transition: 0.2s;
 }
 
 .box-right2-more:hover{
