@@ -671,7 +671,7 @@ footer {
 .footer1 {
     display: flex;
     align-items: center;
-    padding-left: 20px;
+    padding-left: 1%;
     width: 20%;
 }
 
@@ -714,7 +714,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 80%;
 }
 
 .playbackelements {
@@ -821,8 +821,8 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: row;
-    width: 300px;
-    padding-right: 5%;
+    width: 20%;
+    padding-right: 1%;
 }
 
 .footericons {
@@ -833,3 +833,51 @@ footer {
     height: 100%;
     gap: 10px;
 }
+
+.footerimg {
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+.playbuttonarrow {
+    border-radius: 4px;
+    border: 1px solid black;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+}
+
+.music-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 90%;
+    height: 4px;
+    background: #4e4e4e; 
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.music-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+
+.vertical-line {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: red;
+    transform: translateX(-50%);
+  }
