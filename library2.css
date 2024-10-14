@@ -747,8 +747,25 @@ main {
     width: 30%;
     flex-direction: row;
     display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.titlemusicplaylist1 {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
     gap: 20px;
     align-items: center;
+}
+
+.divnumberslistclass {
+    display: flex;
+    width: 20px;
+    justify-content: end;
+}
+
+.numberslistclass {
+    display: flex;
 }
 
 .imgmusicplaylist1 {
