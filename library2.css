@@ -667,28 +667,18 @@ main {
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 35px;
+    padding-right: 35px;
     padding-top: 10px;
     padding-bottom: 5px;
-    /* justify-content: space-between; */
     align-items: center;    
 }
 
 .class22{
     display: flex;
     gap: 20px;
-    flex-direction: row;
-    padding-right: 28.7%;
-    
-}
-
-.class23 {
-    padding-right: 27.7%;
-}
-
-.class24 {
-    padding-right: 27.7%;
+    flex-direction: row;    
+    width: 30%;
 }
 
 .class26{
@@ -699,7 +689,6 @@ main {
 .box-right3border1 {
     width: 100%;
     display: flex;
-    
     justify-content: center;
 }
 
@@ -708,6 +697,20 @@ main {
     width: 95%;
     border-top: 1px solid gray;
     padding-bottom: 10px;
+}
+
+.box-right213 {
+    width: 100%;
+    display: flex;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.class23 {
+    width: 30%;	
+}
+.class24 {
+    width: 38%;	
 }
 
 .musicsinplaylist {
@@ -734,7 +737,6 @@ main {
 }
 
 .musicsinplaylist1 {
-    justify-content: space-between;
     width: 100%;
     flex-direction: row;
     display: flex;
@@ -742,6 +744,7 @@ main {
 }
 
 .titlemusicplaylist {
+    width: 30%;
     flex-direction: row;
     display: flex;
     gap: 20px;
@@ -754,12 +757,12 @@ main {
 }
 
 .albummusicplaylist{
-    margin-left: -8%;
     display: flex;
-
+    width: 30%;
 }
 .dateaddmusicplaylist{
     display: flex;
+    width: 38%;
 }
 
 .timeaddmusicplaylist{
