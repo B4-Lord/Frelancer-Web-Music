@@ -155,4 +155,3 @@ function colormodimg() {
         elemento.classList.add("mudarcorclass");
     } 
 }
-

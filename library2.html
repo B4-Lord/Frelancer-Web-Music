@@ -7,25 +7,25 @@
     <link rel="shortcut icon" href="IMG_20220718_040823.jpg" type="image/x-icon">
     <link rel="stylesheet" href="library2.css">
     <link rel="stylesheet" href="librarymedia2.css">
-    <script src="script.js"></script>
+    <script src="libraryscript.js"></script>
 </head>
 <body> 
     <div class="wrapper">
         <div class="header">
             <div class="logo">
-               <a href="#">
+               <button class="btn1" >
                     <img src="more.png" alt="">
-                </a>
+                </button>
             </div>
             <div class="logo2">
-                <a href="#">
+                <button class="btn1" onclick="antigapagina()">
                      <img src="left-arrow.png" alt="">
-                </a>
+                </button>
              </div>
             <div class="logo2">
-                <a href="#">
+                <button class="btn1" onclick="proximapagina()">
                      <img src="right-arrow.png" alt="">
-                </a>
+                </button>
              </div>
         </div>
         <div class="header2"> 
@@ -68,22 +68,24 @@
         </div>
     </div>
     <main class="menu">
-        <div class="box-left">
+        <div class="box-left" id="box-left">
             <div>
                 <div class="alldivlibrary">
-                    <div class="library">
-                        <a href="#">
-                            <img class="imagemlibrary" src="folder (1).png" alt="Imagem da biblioteca">
-                            <!-- COLOCAR UMA IMAGME ALTERNATIVA COM O BGLH DO JAVA SCRIPT DE FECHAR E ARIR AQUI (FOLDER(2)  -->
-                        </a>
-                        <a class="library2" href="#">Your Library</a>
-                    </div>
+                    <button class="btn1" onclick="modlplaylisistbar()">
+                        <div class="library">
+                            <a>
+                                <img class="imagemlibrary" src="folder (1).png" alt="Imagem da biblioteca" id="library-image">
+                            </a>
+                            <a class="library2" id="library-text">Your Library</a>
+                        </div>
+                    </button>
                     <div class="simbolslibrary">
-                        <a class="simbolus1" href="#">+</a>
-                        <a class="simbolus2" href="">
-                            <img class="imagemarrow" src="right-arrow (1).png" alt="">
-                        </a>
-                        <!-- COLOCAR UMA IMAGME ALTERNATIVA COM O BGLH DO JAVA SCRIPT DE FECHAR E ARIR AQUI (LEFTARROW)  -->
+                        <a class="simbolus1">+</a>
+                        <button class="btn1" onclick="toggleLibraryText()">
+                            <a class="simbolus2">
+                                <img class="imagemarrow" src="right-arrow (1).png" alt="Seta Direita">
+                            </a>
+                        </button>
                     </div>
                 </div>
                 <div class="liberus2">
@@ -230,10 +232,31 @@
                             <p class="font2">Playlist • Creator Name</p>
                         </div>
                     </div>
-                </a>                               
+                </a>
+                <a class="sexosoes1" href="library.html">
+                    <div class="playlistsearch">
+                        <div class="playlistsearch1">
+                            <img class="serachimg" src="IMG_20220718_040823.jpg" alt="">
+                        </div>
+                        <div class="playlistsearch2">
+                            <p class="font1">Music</p>
+                            <p class="font2">Playlist • Creator Name</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="sexosoes1" href="library.html">
+                    <div class="playlistsearch">
+                        <div class="playlistsearch1">
+                            <img class="serachimg" src="IMG_20220718_040823.jpg" alt="">
+                        </div>
+                        <div class="playlistsearch2">
+                            <p class="font1">Music</p>
+                            <p class="font2">Playlist • Creator Name</p>
+                        </div>
+                    </div>
+                </a>                
             </div>
         </div>
-
         <div class="box-right">
             <div class="box-right1">
                 <img class="box1-img" src="IMG_20220718_040823.jpg" alt="">
@@ -652,11 +675,11 @@
                 <a href="">
                     <img src="back.png" style="width: 20px;" alt="" class="playbackimg ">
                 </a>
-                <a href="">
+                <button class="btn1">
                     <div class="centerbutonpause">
-                        <img src="play-button-arrowhead.png" style="width: 15px;" alt="" class="centerplaybackimg">
+                        <img src="play-button-arrowhead.png" id="footerimgplay" onclick="footerimgclick()" style="width: 15px;" alt="" class="centerplaybackimg">
                     </div>
-                </a>
+                </button>
                 <a href="">
                     <img src="next.png" style="width: 20px;" alt="" class="playbackimg">
                 </a>
@@ -672,7 +695,7 @@
         </div>
         <div class="footer3">
             <div class="footericons">
-                <img src="play-button-arrowhead (1).png" class="footerimg playbuttonarrow" style="width: 25px;" alt="">
+                <img src="play-button-arrowhead (1).png" id="footercolorid" class="footerimg1 playbuttonarrow mudarcorclass" style="width: 25px;" alt="" onclick="colormodimg()">
                 <img src="song-lyrics (1).png" class="footerimg" style="width: 20px;" alt="">
                 <img src="play (1).png" class="footerimg" style="width: 20px;" alt="">
                 <img src="volume-mute.png" class="footerimg" style="width: 20px;" alt="">

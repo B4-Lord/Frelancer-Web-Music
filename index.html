@@ -9,24 +9,24 @@
     <link rel="stylesheet" href="media.css">
     <script src="script.js"></script>
 </head>
-<div class="vertical-line"></div>
+<!-- <div class="vertical-line"></div> -->
 <body> 
     <div class="wrapper">
         <div class="header">
             <div class="logo">
-               <a href="#">
+               <button class="btn1" >
                     <img src="more.png" alt="">
-                </a>
+                </button>
             </div>
             <div class="logo2">
-                <a href="#">
+                <button class="btn1" onclick="antigapagina()">
                      <img src="left-arrow.png" alt="">
-                </a>
+                </button>
              </div>
             <div class="logo2">
-                <a href="#">
+                <button class="btn1" onclick="proximapagina()">
                      <img src="right-arrow.png" alt="">
-                </a>
+                </button>
              </div>
         </div>
         <div class="header2"> 
@@ -418,11 +418,11 @@
                 <a href="">
                     <img src="back.png" style="width: 20px;" alt="" class="playbackimg ">
                 </a>
-                <a href="">
+                <button class="btn1">
                     <div class="centerbutonpause">
-                        <img src="play-button-arrowhead.png" style="width: 15px;" alt="" class="centerplaybackimg">
+                        <img src="play-button-arrowhead.png" id="footerimgplay" onclick="footerimgclick()" style="width: 15px;" alt="" class="centerplaybackimg">
                     </div>
-                </a>
+                </button>
                 <a href="">
                     <img src="next.png" style="width: 20px;" alt="" class="playbackimg">
                 </a>
@@ -438,7 +438,7 @@
         </div>
         <div class="footer3">
             <div class="footericons">
-                <img src="play-button-arrowhead (1).png" class="footerimg playbuttonarrow" style="width: 25px;" alt="">
+                <img src="play-button-arrowhead (1).png" id="footercolorid" class="footerimg1 playbuttonarrow mudarcorclass" style="width: 25px;" alt="" onclick="colormodimg()">
                 <img src="song-lyrics (1).png" class="footerimg" style="width: 20px;" alt="">
                 <img src="play (1).png" class="footerimg" style="width: 20px;" alt="">
                 <img src="volume-mute.png" class="footerimg" style="width: 20px;" alt="">

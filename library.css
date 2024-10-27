@@ -216,10 +216,24 @@ main {
 }
 
 .box-left {
+    /* min-width: 255px; */
     width: 20vw;
     height: 84vh; 
     background-color: rgb(19, 19, 19);
     border-radius: 8px;
+    transition: width 0s ease;
+}
+
+.box-left.reducedleft {
+    width: 82px;
+    transition: width 0.1s ease; 
+    min-width: 82px;
+    
+}
+
+.opened {
+    transition: width 0.3s ease;
+    width: 37vw;
 }
 
 .alldivlibrary {
@@ -229,6 +243,10 @@ main {
     width: 100%; 
 }
 
+.alldivlibrary.centerimg {
+    justify-content: center;
+}
+
 .library:hover {
     filter: brightness(100%);
 }
@@ -236,7 +254,7 @@ main {
 .library {
     display: flex;
     align-items: center; 
-    margin: 15px 0 10px 20px;
+    margin: 15px 1px 10px 20px;
     filter: brightness(50%);
     transition: 0.2s;
 }
@@ -251,10 +269,13 @@ main {
 }
 
 .library2 {
+    padding-right: 10px;
+    white-space: nowrap;
     transition: 0.2s;
     padding-left: 10px;
     text-decoration: none;
     color: white;
+    font-size: 16px;
 }
 
 .simbolus2:hover {
@@ -270,7 +291,7 @@ main {
 }
 .simbolslibrary {
     padding-right: 10px;
-    gap: 3px;
+    gap: 6px;
     display: flex; 
     align-items: center; 
 }
@@ -287,7 +308,7 @@ main {
     cursor: pointer; 
 }
 
-.simbolus2{
+.simbolus2 {
     transition: 0.2s;
     filter: brightness(50%);
     font-size: 30px;
@@ -309,6 +330,8 @@ main {
     display: flex;
     gap: 10px;
     padding-left: 10px;
+    padding-right: 10px;
+    flex-wrap: wrap;
 }
 
 .liberus2 {
@@ -396,7 +419,7 @@ main {
 }
 
 .recentstext {
-    padding-bottom: 2px;
+    padding-bottom: 5px;
     font-size: 14px;
     filter: brightness(70%);
     color: white;
@@ -404,14 +427,14 @@ main {
 }
 
 .sexosoes1:hover {
-    background-color:  rgba(255, 255, 255, 0.177);
+    background-color: rgba(255, 255, 255, 0.177);
 }
 
 .sexosoes1 {
     text-decoration: none;
     border-radius: 7px;
     transition: 0.1s;
-    padding: 5px;
+    padding: 6px;
     display: block;
 }
 
@@ -425,10 +448,20 @@ main {
     border: 10px;
 }
 
+.sexosoes.activeheight {
+    height: 92.9%;
+    align-items: center;
+    padding: 5px;
+}
+
 .sexosoes::-webkit-scrollbar {
     position: fixed;
     width: 12px;   
     height: 12px;  
+}
+
+.sexosoes.activeted::-webkit-scrollbar {
+    width: 0px;   
 }
 
 .sexosoes::-webkit-scrollbar-track {
@@ -470,18 +503,19 @@ main {
 }
 
 .serachimg {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     border-radius: 5px;
 }
+
 
 .box-right {
     position: relative;
     overflow-y: auto;
     border-radius: 10px;
-    width: 79vw;
+    width: 100vw;
     height: 84vh;
-    background: rgb(19, 19, 19);
+    background: linear-gradient(0deg, rgb(19, 19, 19) 70%, rgba(104,0,255,0.562062324929972) 100%);
 }
   
 .box-right::-webkit-scrollbar {
@@ -865,6 +899,7 @@ footer {
 .centerbutonpause:hover {
     transform: scale(1.1);
 }
+
 .centerplaybackimg {
     display: flex;
     height: auto;
@@ -878,6 +913,12 @@ footer {
     padding-left: 11px;
     padding-right: 8px;
     margin-bottom: 10px;
+}
+
+.mudarlados {
+    margin-bottom: 5px;
+    margin-right: 1px;
+    margin-left: -1px;
 }
  
 .progress-container {
@@ -963,10 +1004,23 @@ footer {
     cursor: pointer;
     filter: invert(100%);
 }
+.footerimg1 {
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+.mudarcorclass1 {
+    filter: invert(67%) sepia(97%) saturate(7496%) hue-rotate(88deg) brightness(89%) contrast(104%);
+    border: 1px solid green;
+}
+
+.mudarcorclass {
+    border: 1px solid black;
+}
+
 
 .playbuttonarrow {
     border-radius: 4px;
-    border: 1px solid black;
     padding-top: 4px;
     padding-left: 4px;
     padding-right: 4px;
@@ -1006,3 +1060,8 @@ footer {
     background-color: red;
     transform: translateX(-50%);
   }
+
+  .btn1 {
+    background-color: transparent;
+    border: 0;
+}

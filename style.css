@@ -215,20 +215,45 @@ main {
 }
 
 .box-left {
+    /* min-width: 255px; */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ESSA PORRA DESSA LARGURA FUDEU TUDO */
+
+
+
+
+
+
+
+
+
+
     width: 20vw;
     height: 84vh; 
     background-color: rgb(19, 19, 19);
     border-radius: 8px;
-    transition: all 0.3s ease;
+    transition: width 0s ease;
 }
 
 .box-left.reducedleft {
     width: 82px;
+    transition: width 0.1s ease; 
     min-width: 82px;
-    
 }
 
 .opened {
+    transition: width 0.3s ease;
     width: 37vw;
 }
 
@@ -286,7 +311,7 @@ main {
 }
 .simbolslibrary {
     padding-right: 10px;
-    gap: 3px;
+    gap: 6px;
     display: flex; 
     align-items: center; 
 }
@@ -782,6 +807,12 @@ footer {
     padding-right: 8px;
     margin-bottom: 10px;
 }
+
+.mudarlados {
+    margin-bottom: 5px;
+    margin-right: 1px;
+    margin-left: -1px;
+}
  
 .progress-container {
     display: flex;
@@ -867,9 +898,22 @@ footer {
     filter: invert(100%);
 }
 
+.footerimg1 {
+    cursor: pointer;
+    filter: invert(100%);
+}
+
+.mudarcorclass1 {
+    filter: invert(67%) sepia(97%) saturate(7496%) hue-rotate(88deg) brightness(89%) contrast(104%);
+    border: 1px solid green;
+}
+
+.mudarcorclass {
+    border: 1px solid black;
+}
+
 .playbuttonarrow {
     border-radius: 4px;
-    border: 1px solid black;
     padding-top: 4px;
     padding-left: 4px;
     padding-right: 4px;

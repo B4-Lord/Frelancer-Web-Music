@@ -171,6 +171,10 @@
     .text-active {
         width: 77.3% !important;
     }
+
+    .simbolus2 {
+        display: none !important; 
+    }
 }
 
 @media (max-width: 1295px) { 
@@ -227,6 +231,7 @@
         margin-right: 15px;
     }
 }
+
 
 @media (max-width: 859px) { 
     .text-active {

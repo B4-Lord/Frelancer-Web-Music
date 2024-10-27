@@ -105,3 +105,10 @@
         height: 80.8%;
     }
 }
+
+@media (max-width: 1427px) { 
+
+    .simbolus2 {
+        display: none !important; 
+    }
+}
