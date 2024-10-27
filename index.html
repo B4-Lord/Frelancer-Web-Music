@@ -69,22 +69,24 @@
         </div>
     </div>
     <main class="menu">
-        <div class="box-left">
+        <div class="box-left" id="box-left">
             <div>
                 <div class="alldivlibrary">
-                    <div class="library">
-                        <a href="#">
-                            <img class="imagemlibrary" src="folder (1).png" alt="Imagem da biblioteca">
-                            <!-- COLOCAR UMA IMAGME ALTERNATIVA COM O BGLH DO JAVA SCRIPT DE FECHAR E ARIR AQUI (FOLDER(2)  -->
-                        </a>
-                        <a class="library2" href="#">Your Library</a>
-                    </div>
+                    <button class="btn1" onclick="modlplaylisistbar()">
+                        <div class="library">
+                            <a>
+                                <img class="imagemlibrary" src="folder (1).png" alt="Imagem da biblioteca" id="library-image">
+                            </a>
+                            <a class="library2" id="library-text">Your Library</a>
+                        </div>
+                    </button>
                     <div class="simbolslibrary">
-                        <a class="simbolus1" href="#">+</a>
-                        <a class="simbolus2" href="">
-                            <img class="imagemarrow" src="right-arrow (1).png" alt="">
-                        </a>
-                        <!-- COLOCAR UMA IMAGME ALTERNATIVA COM O BGLH DO JAVA SCRIPT DE FECHAR E ARIR AQUI (LEFTARROW)  -->
+                        <a class="simbolus1">+</a>
+                        <button class="btn1" onclick="toggleLibraryText()">
+                            <a class="simbolus2">
+                                <img class="imagemarrow" src="right-arrow (1).png" alt="Seta Direita">
+                            </a>
+                        </button>
                     </div>
                 </div>
                 <div class="liberus2">
@@ -111,6 +113,28 @@
                 </div>
             </div>
             <div class="sexosoes">
+                <a class="sexosoes1" href="library.html">
+                    <div class="playlistsearch">
+                        <div class="playlistsearch1">
+                            <img class="serachimg" src="IMG_20220718_040823.jpg" alt="">
+                        </div>
+                        <div class="playlistsearch2">
+                            <p class="font1">Music</p>
+                            <p class="font2">Playlist • Creator Name</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="sexosoes1" href="library.html">
+                    <div class="playlistsearch">
+                        <div class="playlistsearch1">
+                            <img class="serachimg" src="IMG_20220718_040823.jpg" alt="">
+                        </div>
+                        <div class="playlistsearch2">
+                            <p class="font1">Music</p>
+                            <p class="font2">Playlist • Creator Name</p>
+                        </div>
+                    </div>
+                </a>
                 <a class="sexosoes1" href="library.html">
                     <div class="playlistsearch">
                         <div class="playlistsearch1">

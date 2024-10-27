@@ -219,6 +219,17 @@ main {
     height: 84vh; 
     background-color: rgb(19, 19, 19);
     border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.box-left.reducedleft {
+    width: 82px;
+    min-width: 82px;
+    
+}
+
+.opened {
+    width: 37vw;
 }
 
 .alldivlibrary {
@@ -228,6 +239,10 @@ main {
     width: 100%; 
 }
 
+.alldivlibrary.centerimg {
+    justify-content: center;
+}
+
 .library:hover {
     filter: brightness(100%);
 }
@@ -235,7 +250,7 @@ main {
 .library {
     display: flex;
     align-items: center; 
-    margin: 15px 0 10px 20px;
+    margin: 15px 1px 10px 20px;
     filter: brightness(50%);
     transition: 0.2s;
 }
@@ -250,10 +265,12 @@ main {
 }
 
 .library2 {
+    white-space: nowrap;
     transition: 0.2s;
     padding-left: 10px;
     text-decoration: none;
     color: white;
+    font-size: 16px;
 }
 
 .simbolus2:hover {
@@ -397,7 +414,7 @@ main {
 }
 
 .recentstext {
-    padding-bottom: 2px;
+    padding-bottom: px;
     font-size: 14px;
     filter: brightness(70%);
     color: white;
@@ -405,14 +422,14 @@ main {
 }
 
 .sexosoes1:hover {
-    background-color:  rgba(255, 255, 255, 0.177);
+    background-color: rgba(255, 255, 255, 0.177);
 }
 
 .sexosoes1 {
     text-decoration: none;
     border-radius: 7px;
     transition: 0.1s;
-    padding: 5px;
+    padding: 6px;
     display: block;
 }
 
@@ -426,10 +443,20 @@ main {
     border: 10px;
 }
 
+.sexosoes.activeheight {
+    height: 92.9%;
+    align-items: center;
+    padding: 5px;
+}
+
 .sexosoes::-webkit-scrollbar {
     position: fixed;
     width: 12px;   
     height: 12px;  
+}
+
+.sexosoes.activeted::-webkit-scrollbar {
+    width: 0px;   
 }
 
 .sexosoes::-webkit-scrollbar-track {
@@ -471,8 +498,8 @@ main {
 }
 
 .serachimg {
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     border-radius: 5px;
 }
 
@@ -480,7 +507,7 @@ main {
     position: relative;
     overflow-y: auto;
     border-radius: 10px;
-    width: 79vw;
+    width: 100vw;
     height: 84vh;
     background: linear-gradient(0deg, rgb(19, 19, 19) 70%, rgba(104,0,255,0.562062324929972) 100%);
 }
@@ -881,4 +908,10 @@ footer {
     width: 2px;
     background-color: red;
     transform: translateX(-50%);
-  }
+}
+
+.btn1 {
+    background-color: transparent;
+    border: 0;
+}
+

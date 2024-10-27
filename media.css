@@ -94,6 +94,7 @@
     }
 }
 
+
 @media (max-height: 916px) {
     .sexosoes {
         height: 80.9%;
@@ -123,14 +124,14 @@
 
 @media (max-width: 1220px) {
     .sexosoes {
-        height: 78.8%;
+        height: 76.9%;
     }
     
 }
  
 @media (max-width: 1001px) {
     .sexosoes {
-        height: 73.8%;
+        height: 71.6%;
     }
     
 }
@@ -184,11 +185,18 @@
     }
 }
 
-@media (max-width: 1176px) { 
+@media (max-width: 1190px) { 
     .text-active {
-        width: 76.8% !important;
+        width: 76.5% !important;
     }
 }
+
+@media (max-width: 1176px) { 
+    .text-active {
+        width: 76.4% !important;
+    }
+}
+
 @media (max-width: 1138px) { 
     .text-active {
         width: 76.3% !important;
