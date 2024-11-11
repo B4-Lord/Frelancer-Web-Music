@@ -1,26 +1,16 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const links = document.querySelectorAll('.text a');
-    const nav = document.querySelector('#teste111');
-    const scrollableDiv = document.querySelector('.box-right'); 
-
-    links.forEach(link => {
-        link.addEventListener('click', function() {
-            links.forEach(l => l.classList.remove('active'));
-            this.classList.add('active');
-        });
-    });
-
+document.querySelector(".box-right").onscroll = function() {
+    const barraTeste = document.getElementById("barra-teste");
     
-    scrollableDiv.addEventListener('scroll', () => {
-        if (scrollableDiv.scrollTop > 0) { 
-            nav.classList.add('text-active'); 
-        } else {
-            nav.classList.remove('text-active'); 
-        }
-    });
-});
+    if (document.querySelector(".box-right").scrollTop > 1) {
+        barraTeste.style.backgroundColor = "rgb(81, 19, 139)";
+        barraTeste.style.boxShadow = "0px 1px 5px rgba(0, 0, 0, 0.616)";
+    } else {
+        barraTeste.style.backgroundColor = "transparent";
+        barraTeste.style.boxShadow = "none"; 
+    }
+};
 
-  function toggleLibraryText() {
+function toggleLibraryText() {
     const imagem = document.querySelector('.imagemarrow');
     const div = document.getElementById('box-left');
 

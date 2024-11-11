@@ -15,7 +15,6 @@
 html {
     height: 100%;
 }
-
 body {
     background-color: black;
     color: var(--braco);
@@ -99,7 +98,7 @@ body {
 
 .divdaimagem3:hover {
     filter: brightness(80%);
-    transform: scale(1.1);
+    transform: scale(1.1);  
 }
 
 .divdaimagem3 {
@@ -216,7 +215,6 @@ main {
 }
 
 .box-left {
-    /* min-width: 255px; */
     width: 20vw;
     height: 84vh; 
     background-color: rgb(19, 19, 19);
@@ -228,7 +226,6 @@ main {
     width: 82px;
     transition: width 0.1s ease; 
     min-width: 82px;
-    
 }
 
 .opened {
@@ -269,7 +266,6 @@ main {
 }
 
 .library2 {
-    padding-right: 10px;
     white-space: nowrap;
     transition: 0.2s;
     padding-left: 10px;
@@ -419,7 +415,7 @@ main {
 }
 
 .recentstext {
-    padding-bottom: 5px;
+    padding-bottom: px;
     font-size: 14px;
     filter: brightness(70%);
     color: white;
@@ -427,7 +423,7 @@ main {
 }
 
 .sexosoes1:hover {
-    background-color:  rgba(255, 255, 255, 0.177);
+    background-color: rgba(255, 255, 255, 0.177);
 }
 
 .sexosoes1 {
@@ -536,287 +532,144 @@ main {
     border-bottom-right-radius: 10px;
 }
 
-.box-right1 {
-    padding: 25px;
-    display: flex;
-    width: 100%;
-    background-color: rgba(104,0,255,0.562062324929972);
-    box-shadow: 1px 1px 6px 7px rgba(104,0,255,0.562062324929972);
+.text a {
+    transition: 0.3s;
+    font-family: Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 8px;
 }
 
-.box1-img:hover {
-    filter: brightness(80%);
+.text a:hover {
+    box-shadow: 0 0 5px rgba(104,0,255,0.562062324929972); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+    background-color: rgba(255, 255, 255, 0.267);
 }
 
-.box1-img {
-    width: 250px;
-    border-radius: 10px;
+.playlist {
+    margin-top: 68px;
+    margin-left: 20px;
     margin-right: 20px;
-}
-
-.nameinfos {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px;
+    text-decoration: none;
 }
 
-.nameinfos h3 {
-    font-size: 60px;
+.a1 {
+    text-decoration: none;
+}
+
+.elements {
+    background-color: rgba(255, 255, 255, 0.2);
+    max-width: 400px; 
+    height: 70px;
+    border-radius: 8px;
+    transition: 0.5s;
+    display: flex;
+    align-items: center; 
+    padding: 0px; 
+}
+
+.elements:hover {
+    box-shadow: 0 0 5px rgba(104,0,255,0.562062324929972); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+    background-color: rgba(255, 255, 255, 0.377);
+}
+
+.elements img {
+    width: 70px; 
+    height: 70px; 
+    border-top-left-radius: 8px;    
+    border-bottom-left-radius: 8px;  
+    margin-right: 20px; 
+}
+
+.elements p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;  
+    margin-right: 6px;
+}
+
+.madeforyou {
+    display: flex;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#madeforyou {
+    color: white;
+    font-size: 22px;
+}
+
+.boxdamade {
+    width: 90%;
+}
+
+#show-all:hover  {
+    text-decoration: underline 1px solid white;
+    cursor: pointer;
+}
+
+#show-all {
+    margin-top: auto;
     color: white;
 }
 
-.imgnameinfos{
-    flex-direction: row;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+#madeforyou:hover {
+    text-decoration: underline 2px solid white;
+    cursor: pointer;
+}
+
+.madeinboxes {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fill, 220px);
+    gap: 20px;
+    justify-content: center;
+}
+
+.madeboxes {
+    width: 240px;
+    height: 280px;
+    border-radius: 8px;
+    transition: 0.1s;
+}
+
+.madeboxes:hover {
+    background-color: rgba(240, 240, 240, 0.137);
+}
+
+.amadeinboxes {
     text-decoration: none;
+    max-width: 100vw;
+    display: flex;
 }
 
-.imgnameinfos2 {
-    border-radius: 50%;
-    padding-right: 5px;
-    width: 30px; 
+.img2 {
+    padding: 12px;
+    height: 240px;
+    width: 240px;
+    border-radius: 20px;
 }
 
-.font3 {
+.text2 {
     color: white;
-    font-size: 15px;
-    text-decoration: none;
-    padding-right: 5px;
-}
-
-.font3:hover {
-    text-decoration: underline;
-}
-
-.font33 {
-    color: gray;
-    font-size: 15px;
-    text-decoration: none;
-    padding-right: 5px;
-}
-
-.box-right2 {
-    display: flex;
-    width: 100%;
-    padding: 20px;    
-}
-
-.box-right2-menu {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    gap: 25px;
-}
-
-.box-right2-play1 {
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
-    padding-top: 7px ;
-    padding-left: 10px;
-    padding-right: 7px;
-    padding-bottom: 5px;
-    background-color: #13fc03;
-    border-radius: 50%;
-    transition: 0.2s;
-}
-
-.box-right2-play {
-    padding: 11px;
-    width: 40px;
-    height: 40px;
-    transition: 0.2s;
-}
-
-.box-right2-play1:hover {
-    transform: scale(1.1);
-}
-
-.box-right2-shuffle {
-    transition: 0.2s;
-    width: 30px;
-    filter: invert(40%);
-}
-
-.box-right2-shuffle:hover {
-    filter: invert(90%);
-}
-
-.box-right2-more{
-    width: 35px;
-    filter: invert(40%);
-    transition: 0.2s;
-}
-
-.box-right2-more:hover{
-    filter: invert(90%);
-}
-
-.box-right2-menu2 {
-    justify-content: end;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    gap: 20px;
-    filter: invert(40%);
-}
-
-.search54:hover{
-    filter: invert(100%);
-}
-
-.search55:hover{
-    filter: invert(100%);
-}
-
-.imgsearch53 {
-    width: 15px;
-}
-
-.searc56 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.recentstext56{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-}
-
-.imgsearch57 {
-    width: 20px;
-    margin-top: 2.5px;
-}
-
-.box-right3{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    align-items: center;    
-}
-
-.class22{
-    display: flex;
-    gap: 20px;
-    flex-direction: row;    
-    width: 30%;
-}
-
-.class26{
-    width: 20px;
-    filter: invert(40%);
-}
-
-.box-right3border1 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.box-right3border2 {
-    display: flex;
-    width: 95%;
-    border-top: 1px solid gray;
-    padding-bottom: 10px;
-}
-
-.box-right213 {
-    width: 100%;
-    display: flex;
-    padding-left: 8px;
-    padding-right: 8px;
-}
-
-.class23 {
-    width: 30%;	
-}
-.class24 {
-    width: 38%;	
-}
-
-.musicsinplaylist {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 10px;
-
-}
-
-.musicsinplaylist22:hover {
-    background-color: #4e4e4e;
-}
-
-.musicsinplaylist22 {
-    transition: 0.2s;
-    border-radius: 5px;
-    padding: 8px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.musicsinplaylist1 {
-    width: 100%;
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-}
-
-.titlemusicplaylist {
-    width: 30%;
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.titlemusicplaylist1 {
-    width: 100%;
-    flex-direction: row;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-
-.divnumberslistclass {
-    display: flex;
-    width: 20px;
-    justify-content: end;
-}
-
-.numberslistclass {
-    display: flex;
-}
-
-.imgmusicplaylist1 {
-    width: 50px;
-    border-radius: 3px;
-}
-
-.albummusicplaylist{
-    display: flex;
-    width: 30%;
-}
-.dateaddmusicplaylist{
-    display: flex;
-    width: 38%;
-}
-
-.timeaddmusicplaylist{
-    display: flex;
+    font-size: 13px;
+    padding-left: 12px;
+    padding-bottom: 12px;
+    padding-right: 12px;
 }
 
 footer {

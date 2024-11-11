@@ -1,15 +1,15 @@
+/*  
+  Author: B4_Lord
+  Project: Landing Spotify Clone Page
+  Instagram: @b4__lord
+  Github: https://github.com/B4-Lord
+*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-:root {
-    --braco: rgb(184, 184, 184);
-    --cinza: rgb(19, 19, 19);
-    --cinzablk: rgb(26, 26, 26);
-    --preto: rgb(15, 15, 15);
 }
 
 html {
@@ -822,16 +822,28 @@ main {
 
 footer {
     width: 100%;
-    height: 89.1px;
     background-color: black;
     display: flex;   
+    height: 8.4vh;
 }
 
-.footer1 {
+.footer111 {
     display: flex;
     align-items: center;
-    padding-left: 1%;
-    width: 20%;
+    padding-left: 20px;
+    min-width: 30%;
+}
+.footer222 {
+    display: flex;
+    width: 100%;
+}
+
+.footer333 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+    /* white-space: nowrap; */
 }
 
 .footermusicimg img {
@@ -869,19 +881,24 @@ footer {
     text-decoration: underline 1px solid white;
 }
 
-.footer2 {
-    display: flex;
-    flex-direction: column;
+.fouter111 {
     justify-content: center;
-    width: 80%;
+    width: 40%;
+    display: flex;
 }
 
-.playbackelements {
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
+.fouter222{
     justify-content: center;
-    gap: 20px;  
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+
+.fouter333{
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .playbackimg:hover {
@@ -899,7 +916,6 @@ footer {
 .centerbutonpause:hover {
     transform: scale(1.1);
 }
-
 .centerplaybackimg {
     display: flex;
     height: auto;
@@ -921,19 +937,25 @@ footer {
     margin-left: -1px;
 }
  
-.progress-container {
+
+.fouter444 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fouter555 {
+    width: 100%;
     display: flex;
     align-items: center;
-    width: 80%;
     justify-content: center;
-    max-width: 700px; 
-    margin: 0 auto;
+    gap: 20px;
 }
+
 
 .time-start, .time-end {
     color: white;
-    font-size: 12px;
-    margin: 0 10px;
+    font-size: 12px;;
 }
 
 .progress-bar {
@@ -957,53 +979,32 @@ footer {
     cursor: pointer;
     transition: background 0.3s ease-in-out;
 }
-/*
-.progress-bar::-moz-range-thumb {
-    width: 10px;
-    height: 10px;
-    background: white;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
+ 
+.fuoter000 {
+    display: flex;
+    padding-right: 20px;
+    width: 30%;
+    min-width: 299px;
+    justify-content: flex-end;
 }
 
-.progress-bar::-webkit-slider-thumb:hover {
-    background-color: #b3b3b3;
-}
-
-.progress-bar::-moz-range-thumb:hover {
-    background-color: #b3b3b3;
-}
-
-.progress-bar::-webkit-slider-runnable-track {
-    background: linear-gradient(green 100%);
-}
-
-.progress-bar::-moz-range-progress {
-    background-color: #ffffff;
-} */
-
-.footer3 {
+.fuoter111 {
     display: flex;
     align-items: center;
-    flex-direction: row;
-    width: 20%;
-    padding-right: 1%;
+    justify-content: flex-end;
 }
 
-.footericons {
+.fuoter333 {
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
-    gap: 10px;
+    gap: 9px;
 }
 
 .footerimg {
     cursor: pointer;
     filter: invert(100%);
 }
+
 .footerimg1 {
     cursor: pointer;
     filter: invert(100%);
@@ -1018,7 +1019,6 @@ footer {
     border: 1px solid black;
 }
 
-
 .playbuttonarrow {
     border-radius: 4px;
     padding-top: 4px;
@@ -1028,11 +1028,10 @@ footer {
 }
 
 .music-bar {
-    -webkit-appearance: none;
     appearance: none;
-    width: 90%;
+    width: 100px;
     height: 4px;
-    background: #4e4e4e; 
+    background: #4e4e4e;
     border-radius: 5px;
     outline: none;
     cursor: pointer;
@@ -1059,9 +1058,49 @@ footer {
     width: 2px;
     background-color: red;
     transform: translateX(-50%);
-  }
+}
 
-  .btn1 {
+.btn1 {
     background-color: transparent;
     border: 0;
+}
+
+.barradenavegacao {
+    position: sticky;
+    top: 0;
+}
+
+.barra-teste {
+    height: 54px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0.3s;
+
+
+}
+
+.text {
+    position: absolute; 
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    flex-direction: row;
+    padding-left: 10px;
+}
+
+.visible {
+    opacity: 1;
+}
+
+
+.alternativeteste {
+    width: 20%;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }

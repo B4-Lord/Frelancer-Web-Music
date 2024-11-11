@@ -1,3 +1,10 @@
+/*  
+  Author: B4_Lord
+  Project: Landing Spotify Clone Page
+  Instagram: @b4__lord
+  Github: https://github.com/B4-Lord
+*/
+
 @media (max-height: 1080px) {
     .sexosoes {
         height: 83.9%;
@@ -151,19 +158,11 @@
     .text-active {
         width: 77.57% !important;
     }
-
-    footer {
-        height: 8.4vh;
-    }
 }
 
 @media (max-width: 1591px) { 
     .text-active {
         width: 77.5% !important;
-    }
-
-    footer {
-        height: 8.4vh;
     }
 }
 
@@ -213,7 +212,7 @@
     }
 }
 
-@media (max-width: 926px) { 
+@media (max-width: 945px) { 
     
     .playlist {
         grid-template-columns: repeat(3, 1fr); 
@@ -239,6 +238,12 @@
     }
 }
 
+@media (max-width: 835px) {
+    .input-with-icon {
+        width: 300px;
+    }
+}
+
 @media (max-width: 814px) { 
     .text-active {
         width: 75.4% !important;
@@ -253,6 +258,25 @@
     .text-active {
         width: 75.1% !important;
     }
+
+    nav ul {
+        padding: 0 10px;
+    }
+
+    .input-with-icon {
+        width: 300px; 
+    }
+
+    .imagemdabarra {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 700px) {
+    .input-with-icon {
+        width: 250px; 
+    }
 }
 
 @media (max-width: 480px) {
@@ -260,18 +284,3 @@
         grid-template-columns: 1fr; 
     }
 }
-
- @media (max-width: 768px) {
-    nav ul {
-        padding: 0 10px;
-    }
-
-    .input-with-icon {
-        width: 200px; 
-    }
-
-    .imagemdabarra {
-        width: 35px;
-        height: 35px;
-    }
-} 

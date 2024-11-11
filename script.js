@@ -1,158 +1,99 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const links = document.querySelectorAll('.text a');
-    const nav = document.querySelector('#teste111');
-    const scrollableDiv = document.querySelector('.box-right'); 
+function showModal() {
+    document.getElementById('overlay').classList.add('show');
+}
 
-    links.forEach(link => {
-        link.addEventListener('click', function() {
-            links.forEach(l => l.classList.remove('active'));
-            this.classList.add('active');
-        });
-    });
+function hideModal() {
+    document.getElementById('overlay').classList.remove('show');
+}
 
+function showModal2() {
+    document.getElementById('overlay2').classList.add('show');
+}
+
+function hideModal2() {
+    document.getElementById('overlay2').classList.remove('show');
+}
+
+window.addEventListener("load", function() {
+    const preloader = document.querySelector(".preloader");
+    preloader.style.display = "none";
     
-    scrollableDiv.addEventListener('scroll', () => {
-        if (scrollableDiv.scrollTop > 0) { 
-            nav.classList.add('text-active'); 
-        } else {
-            nav.classList.remove('text-active'); 
-        }
+    const background = document.querySelector(".background");
+    setTimeout(() => {
+        background.style.opacity = "1";
     });
 });
-  function toggleLibraryText() {
-    const imagem = document.querySelector('.imagemarrow');
-    const div = document.getElementById('box-left');
 
-    if (imagem.getAttribute('src') === 'right-arrow (1).png') {
-      imagem.setAttribute('src', 'arrow.png'); 
-      div.classList.toggle('opened', true);
+document.getElementById('openPageButton').addEventListener('click', function() {
+    window.location.href = 'home.html';
+});
+
+function toggleBackground() {
+    const mudarimg = document.querySelector("#mudarimg img");
+    const currentSrc = mudarimg.getAttribute("src");
+
+    if (currentSrc === "Img/Moon-Dark.png") {
+        mudarimg.setAttribute("src", "Img/Sun-Light.png");
     } else {
-      imagem.setAttribute('src', 'right-arrow (1).png'); 
-      div.classList.toggle('opened', false);
- 
+        mudarimg.setAttribute("src", "Img/Moon-Dark.png");
     }
-  }
 
-// ESSA PARTE A CIMA ESTA CORRETA
+    const elements = document.querySelectorAll('.bodyjs, .navbar, .modal, .modal1');
+    elements.forEach(element => {
+        element.classList.toggle('dark-mode');
+        element.classList.toggle('light-mode');
+    });
 
-let isReduced = false;
+    const elementstext = document.querySelectorAll('.button11, .h3');
+    elementstext.forEach(elementstext => {
+        elementstext.classList.toggle('dark-mode-text');
+        elementstext.classList.toggle('light-mode-text');
+    });
 
-function modlplaylisistbar() {
-    const libraryText = document.getElementById("library-text");
-    const boxLeft = document.getElementById("box-left");
-    const libraryImage = document.getElementById("library-image");
-    const removeelement = document.querySelectorAll(".playlistsearch2");
-    const removeelement2 = document.querySelectorAll(".search");
-    const removeelement3 = document.querySelectorAll(".liberus2");
-    const removeelement4 = document.querySelectorAll(".simbolslibrary");
-    const activeheight = document.querySelector(".sexosoes");
-    const sexosoesactivated = document.querySelector(".sexosoes");
-    const centerimg = document.querySelector(".alldivlibrary");
+    const elementstext2 = document.querySelectorAll('.btn2');
+    elementstext2.forEach(elementstext2 => {
+        elementstext2.classList.toggle('dark-mode-text2');
+        elementstext2.classList.toggle('light-mode-text2');
+    });
 
-    if (!isReduced) {
-        libraryText.innerText = ""; 
-        boxLeft.classList.add("reducedleft"); 
-        libraryImage.src = "folder (2).png"; 
+    const elementstext3 = document.querySelectorAll('.mudartexto11');
+    elementstext3.forEach(elementstext3 => {
+        elementstext3.classList.toggle('dark-mode-text3');
+        elementstext3.classList.toggle('light-mode-text3');
+    });
 
-        const itenstoadd = [
-            ...removeelement, ...removeelement2, ...removeelement3, ...removeelement4
-            
-        ]
-            
-        for (const item of itenstoadd) {
-            item.style.display = "none";
-        }
+    const elementstext4 = document.querySelectorAll('.subtitle, .h4text, .ptext');
+    elementstext4.forEach(elementstext4 => {
+        elementstext4.classList.toggle('dark-mode-text4');
+        elementstext4.classList.toggle('light-mode-text4');
+    });
 
-        // for (const item of removeelement) {
-        //     item.style.display = "none";
-        // }
+    const elementbackground = document.querySelectorAll('.background');
+    elementbackground.forEach(elementbackground => {
+        elementbackground.classList.toggle('dark-background');
+        elementbackground.classList.toggle('light-background');
+    });
 
-        // for (const item2 of removeelement2) {
-        //     item2.style.display = "none";
-        // }
-        
-        // for (const item3 of removeelement3) {
-        //     item3.style.display = "none";
-        // }
+    const bolabranca1 = document.querySelectorAll('.bola-branca, .bola-pequena-branca');
+    bolabranca1.forEach(bolabranca1 => {
+        bolabranca1.classList.toggle('bolabranca-black');
+        bolabranca1.classList.toggle('bolabranca-light');
+    });
 
-        // for (const item4 of removeelement4) {
-        //     item4.style.display = "none";
-        // }
+    const btn = document.querySelector('.btn2');
+    btn.classList.toggle('clicked');
 
-        activeheight.classList.add("activeheight");
+    const btn3 = document.querySelector('.btn3');
+    btn3.classList.toggle('clicked');
 
-        sexosoesactivated.classList.add("activeted");
-
-        centerimg.classList.add("centerimg");
-
-        isReduced = true; 
-
-    } else {
-        libraryText.innerText = "Your Library"; 
-        boxLeft.classList.remove("reducedleft"); 
-        libraryImage.src = "folder (1).png"; 
-
-        // for (const item of removeelement) {
-        //     item.style.display = "flex";
-        // }
-
-        // for (const lixo of removeelement2) {
-        //     lixo.style.display = "flex";
-        // }
-
-        // for (const item3 of removeelement3) {
-        //     item3.style.display = "flex";
-        // }
-
-        // for (const item4 of removeelement4) {
-        //     item4.style.display = "flex";
-        // }
-
-        const itenstoremove = [
-            ...removeelement, ...removeelement2, ...removeelement3, ...removeelement4
-            
-        ]
-            
-        for (const item of itenstoremove) {
-            item.style.display = "flex";
-        }
-
-        activeheight.classList.remove("activeheight");
-
-        sexosoesactivated.classList.remove("activeted");
-
-        centerimg.classList.remove("centerimg");
-
-        isReduced = false; 
-    }
+    const btn1 = document.querySelector('.btn');
+    btn1.classList.toggle('clicked');
 }
 
-function footerimgclick() {
-    const mudarimg = document.getElementById("footerimgplay");
-    const mudarlocal = document.getElementById("footerimgplay");
+document.getElementById('openPageButton1').addEventListener('click', function() {
+    window.location.href = 'home.html';
+});
 
-    if (mudarimg.src.includes("play-button-arrowhead.png")) {
-        mudarimg.src = "pause.png"; 
-        mudarlocal.classList.add("mudarlados")
-
-    } else {
-        mudarimg.src = "play-button-arrowhead.png"; 
-        mudarlocal.classList.remove("mudarlados")
-    }
-}
-
-function colormodimg() {
-    const elemento = document.getElementById("footercolorid");
-
-    // Verifica se "mudarcorclass" está presente e alterna para "mudarcorclass1"
-    if (elemento.classList.contains("mudarcorclass")) {
-        elemento.classList.remove("mudarcorclass");
-        elemento.classList.add("mudarcorclass1");
-    } 
-    // Verifica se "mudarcorclass1" está presente e alterna para "mudarcorclass"
-    else if (elemento.classList.contains("mudarcorclass1")) {
-        elemento.classList.remove("mudarcorclass1");
-        elemento.classList.add("mudarcorclass");
-    } 
-}
-
+document.getElementById('opengithub').addEventListener('click', function() {
+    window.open('https://github.com/B4-Lord', '_blank')
+});

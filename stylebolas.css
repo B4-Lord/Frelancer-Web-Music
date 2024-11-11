@@ -1,0 +1,96 @@
+/*  
+  Author: B4_Lord
+  Project: Landing Spotify Clone Page
+  Instagram: @b4__lord
+  Github: https://github.com/B4-Lord
+*/
+
+.bola {
+    transition: 0.3s ease;
+    position: fixed;
+    border-radius: 50%;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-5px) scale(1.02); }
+    100% { transform: translateY(0) scale(1); }
+}
+
+.bola-branca {
+    width: 100px;
+    height: 100px;
+    filter: blur(15px);
+}
+
+.bola-roxa {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(116, 77, 255, 0.514); 
+    filter: blur(10px);
+}
+
+.bola-pequena-branca {
+    width: 40px;
+    height: 40px;
+    filter: blur(5px); 
+}
+
+.bola-pequena-roxa {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(116, 77, 255, 0.514); 
+    filter: blur(5px); 
+}
+
+.bola1 { top: 5%; left: 5%; }
+.bola2 { top: 10%; left: 80%; }
+.bola3 { top: 20%; left: 45%; }
+.bola4 { top: 35%; left: 90%; }
+.bola5 { top: 50%; left: 15%; }
+.bola6 { top: 50%; left: 50%; }
+.bola7 { top: 60%; left: 85%; }
+.bola8 { top: 70%; left: 5%; }
+.bola9 { top: 75%; left: 60%; }
+.bola10 { top: 85%; left: 95%; }
+.bola11 { top: 5%; left: 80%; }
+.bola12 { top: 15%; left: 15%; }
+.bola13 { top: 25%; left: 70%; }
+.bola14 { top: 40%; left: 60%; }
+.bola15 { top: 75%; left: 20%; }
+.bola16 { top: 80%; left: 50%; }
+.bola17 { top: 90%; left: 10%; }
+.bola18 { top: 55%; left: 85%; }
+.bola19 { top: 35%; left: 25%; }
+.bola20 { top: 70%; left: 40%; }
+.bola21 { top: 30%; left: 15%; }
+.bola22 { top: 25%; left: 45%; }
+.bola23 { top: 40%; left: 75%; }
+.bola24 { top: 65%; left: 35%; }
+.bola25 { top: 80%; left: 60%; }
+.bola26 { top: 10%; left: 40%; }
+.bola27 { top: 15%; left: 75%; }
+.bola28 { top: 30%; left: 25%; }
+.bola29 { top: 50%; left: 90%; }
+.bola30 { top: 85%; left: 10%; }
+.bola31 { top: 15%; left: 25%; }
+.bola32 { top: 30%; left: 70%; }
+.bola33 { top: 45%; left: 5%; }
+.bola34 { top: 60%; left: 40%; }
+.bola35 { top: 80%; left: 80%; }
+.bola36 { top: 25%; left: 50%; }
+.bola37 { top: 10%; left: 95%; }
+.bola38 { top: 35%; left: 30%; }
+.bola39 { top: 65%; left: 10%; }
+.bola40 { top: 90%; left: 70%; }
+.bola41 { top: 5%; left: 60%; }
+.bola42 { top: 20%; left: 10%; }
+.bola43 { top: 35%; left: 50%; }
+.bola44 { top: 45%; left: 75%; }
+.bola45 { top: 65%; left: 20%; }
+.bola46 { top: 80%; left: 35%; }
+.bola47 { top: 85%; left: 55%; }
+.bola48 { top: 60%; left: 90%; }
+.bola49 { top: 40%; left: 15%; }
+.bola50 { top: 70%; left: 45%; }
