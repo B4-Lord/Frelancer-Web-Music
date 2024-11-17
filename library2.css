@@ -733,10 +733,15 @@ main {
 }
 
 .box-right213 {
+    color: gray;
     width: 100%;
     display: flex;
     padding-left: 8px;
     padding-right: 8px;
+}
+
+.pclassesbox-r3:hover {
+    color: white;
 }
 
 .class23 {
@@ -798,6 +803,7 @@ main {
 }
 
 .numberslistclass {
+    color: #4e4e4e;
     display: flex;
 }
 

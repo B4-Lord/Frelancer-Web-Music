@@ -734,10 +734,15 @@ main {
 }
 
 .box-right213 {
+    color: gray;
     width: 100%;
     display: flex;
     padding-left: 8px;
     padding-right: 8px;
+}
+
+.right213hover:hover {
+    color: white;
 }
 
 .class23 {
@@ -799,8 +804,10 @@ main {
 }
 
 .numberslistclass {
+    color: #4e4e4e;
     display: flex;
 }
+
 
 .imgmusicplaylist1 {
     width: 50px;

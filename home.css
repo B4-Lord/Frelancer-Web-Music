@@ -415,7 +415,7 @@ main {
 }
 
 .recentstext {
-    padding-bottom: px;
+    padding-bottom: 5px;
     font-size: 14px;
     filter: brightness(70%);
     color: white;
