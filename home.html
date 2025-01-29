@@ -1,0 +1,486 @@
+<!-- 
+  Author: B4_Lord
+  Project: Landing Spotify Clone Page
+  Instagram: @b4__lord
+  Github: https://github.com/B4-Lord
+-->
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B4 Web Music</title>
+    <link rel="shortcut icon" href="Img/IMG_20220718_040823.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="homemedia.css">
+</head>
+<!-- <div class="vertical-line"></div> -->
+<body> 
+    <div class="wrapper">
+        <div class="header" id="navigation11" >
+            <div class="logo">
+               <button class="btn1">
+                    <img src="Img/More.png" alt="">
+                </button>
+            </div>
+            <div class="logo2">
+                <button class="btn1" onclick="antigapagina()">
+                     <img src="Img/L-sing.png" alt="">
+                </button>
+             </div>
+            <div class="logo2">
+                <button class="btn1" onclick="proximapagina()">
+                     <img src="Img/R-sing.png" alt="">
+                </button>
+             </div>
+        </div>
+        <div class="header2"> 
+            <div class="centered-input">
+                <div class="input-container">
+                    <div class="divcontdaimagemdoimp">
+                        <div class="divdaimagem3">
+                            <button class="btn1" id="openhomepage">
+                                <img class="img3" src="Img/Home.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <input type="text" class="input-with-icon" placeholder="What do you want to play?">
+                    <a class="clicaimg" href="#">
+                        <img src="Img/IMG_20220718_040823.jpg" alt="Ícone" class="input-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header3">
+            <div class="divdsaimagens">
+                <div class="imgcomgap22">
+                    <a href="#">
+                        <img class="img22" src="Img/Notification.png" alt="">
+                    </a>
+                </div>
+                <div class="imgcomgap">
+                    <a href="#">
+                        <img class="img1" src="Img/Peoples.png" alt="">
+                    </a>
+                </div>
+                <div class="imgcomgap">
+                    <div>
+                        <button class="btn1">
+                            <img class="imgnav" src="Img/IMG_20220718_040823.jpg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="menu">
+        <div class="box-left" id="box-left">
+            <div class="alldivlibrary">
+                <button class="btn1" onclick="modlplaylisistbar()">
+                    <div class="library">
+                        <a>
+                            <img class="imagemlibrary" src="Img/Folder-open.png" alt="Imagem da biblioteca" id="library-image">
+                        </a>
+                        <a class="library2" id="library-text">Your Library</a>
+                    </div>
+                </button>
+                <div class="simbolslibrary">
+                    <a class="simbolus1">+</a>
+                    <button class="btn1" onclick="toggleLibraryText()">
+                        <a class="simbolus2">
+                            <img class="imagemarrow" src="Img/R-arrow.png" alt="Seta Direita">
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="liberus2">
+                <a href="#">Playlist</a>
+                <a href="#">Podcasts</a>
+                <a href="#">Artists</a>
+            </div>
+            <div class="searchrecent">
+                <div class="search">
+                    <div class="search2">
+                        <a href="">
+                            <img class="imgsearch" src="Img/Loupe-find.png" alt="">
+                        </a>
+                    </div>
+                    <div class="search3">
+                        <div class="search4">
+                            <a href="#" class="recentstext">Recents</a>
+                            <a href="#">
+                                <img class="imgsearch43" src="Img/List.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sexosoes">
+                <a class="sexosoes1" href="library.html">
+                    <div class="playlistsearch">
+                        <div class="playlistsearch1">
+                            <img class="serachimg" src="Img/IMG_20220718_040823.jpg" alt="">
+                        </div>
+                        <div class="playlistsearch2">
+                            <p class="font1">Music</p>
+                            <p class="font2">Playlist • Creator Name</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="sexosoes1" href="library.html">
+                    <div class="playlistsearch">
+                        <div class="playlistsearch1">
+                            <img class="serachimg" src="Img/IMG_20220718_040823.jpg" alt="">
+                        </div>
+                        <div class="playlistsearch2">
+                            <p class="font1">Music</p>
+                            <p class="font2">Playlist • Creator Name</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="sexosoes1" href="library.html">
+                    <div class="playlistsearch">
+                        <div class="playlistsearch1">
+                            <img class="serachimg" src="Img/IMG_20220718_040823.jpg" alt="">
+                        </div>
+                        <div class="playlistsearch2">
+                            <p class="font1">Music</p>
+                            <p class="font2">Playlist • Creator Name</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="sexosoes1" href="library.html">
+                    <div class="playlistsearch">
+                        <div class="playlistsearch1">
+                            <img class="serachimg" src="Img/IMG_20220718_040823.jpg" alt="">
+                        </div>
+                        <div class="playlistsearch2">
+                            <p class="font1">Music</p>
+                            <p class="font2">Playlist • Creator Name</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="sexosoes1" href="library.html">
+                    <div class="playlistsearch">
+                        <div class="playlistsearch1">
+                            <img class="serachimg" src="Img/IMG_20220718_040823.jpg" alt="">
+                        </div>
+                        <div class="playlistsearch2">
+                            <p class="font1">Music</p>
+                            <p class="font2">Playlist • Creator Name</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="sexosoes1" href="library.html">
+                    <div class="playlistsearch">
+                        <div class="playlistsearch1">
+                            <img class="serachimg" src="Img/IMG_20220718_040823.jpg" alt="">
+                        </div>
+                        <div class="playlistsearch2">
+                            <p class="font1">Music</p>
+                            <p class="font2">Playlist • Creator Name</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="sexosoes1" href="library.html">
+                    <div class="playlistsearch">
+                        <div class="playlistsearch1">
+                            <img class="serachimg" src="Img/IMG_20220718_040823.jpg" alt="">
+                        </div>
+                        <div class="playlistsearch2">
+                            <p class="font1">Music</p>
+                            <p class="font2">Playlist • Creator Name</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="sexosoes1" href="library.html">
+                    <div class="playlistsearch">
+                        <div class="playlistsearch1">
+                            <img class="serachimg" src="Img/IMG_20220718_040823.jpg" alt="">
+                        </div>
+                        <div class="playlistsearch2">
+                            <p class="font1">Music</p>
+                            <p class="font2">Playlist • Creator Name</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="sexosoes1" href="library.html">
+                    <div class="playlistsearch">
+                        <div class="playlistsearch1">
+                            <img class="serachimg" src="Img/IMG_20220718_040823.jpg" alt="">
+                        </div>
+                        <div class="playlistsearch2">
+                            <p class="font1">Music</p>
+                            <p class="font2">Playlist • Creator Name</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="sexosoes1" href="library.html">
+                    <div class="playlistsearch">
+                        <div class="playlistsearch1">
+                            <img class="serachimg" src="Img/IMG_20220718_040823.jpg" alt="">
+                        </div>
+                        <div class="playlistsearch2">
+                            <p class="font1">Music</p>
+                            <p class="font2">Playlist • Creator Name</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="sexosoes1" href="library.html">
+                    <div class="playlistsearch">
+                        <div class="playlistsearch1">
+                            <img class="serachimg" src="Img/IMG_20220718_040823.jpg" alt="">
+                        </div>
+                        <div class="playlistsearch2">
+                            <p class="font1">Music</p>
+                            <p class="font2">Playlist • Creator Name</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="sexosoes1" href="library.html">
+                    <div class="playlistsearch">
+                        <div class="playlistsearch1">
+                            <img class="serachimg" src="Img/IMG_20220718_040823.jpg" alt="">
+                        </div>
+                        <div class="playlistsearch2">
+                            <p class="font1">Music</p>
+                            <p class="font2">Playlist • Creator Name</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="sexosoes1" href="library.html">
+                    <div class="playlistsearch">
+                        <div class="playlistsearch1">
+                            <img class="serachimg" src="Img/IMG_20220718_040823.jpg" alt="">
+                        </div>
+                        <div class="playlistsearch2">
+                            <p class="font1">Music</p>
+                            <p class="font2">Playlist • Creator Name</p>
+                        </div>
+                    </div>
+                </a>                
+            </div>
+        </div>
+        <div class="box-right" id="box-right">
+            <div class="barradenavegacao" id="barradenavegacao">
+                <div class="barra-teste" id="barra-teste"></div>
+                <div style="width: 100%;" id="teste111" class="text animacaobarra123">
+                    <a href="#">All</a>
+                    <a href="#">Music</a>
+                    <a href="#">Podcasts</a>
+                </div>
+            </div>
+            <div class="playlist">
+                <a href="library2.html" class="a1">
+                    <div class="elements" id="color">
+                        <img src="Img/IMG_20220718_040823.jpg">
+                        <p>Liked Songs</p>
+                    </div>
+                </a>
+                <a href="library2.html" class="a1">
+                    <div class="elements">
+                        <img src="Img/IMG_20220718_040823.jpg">
+                        <p>Testando</p>
+                    </div>
+                </a>
+                <a href="library2.html" class="a1">
+                    <div class="elements">
+                        <img src="Img/IMG_20220718_040823.jpg">
+                        <p>Testando</p>
+                    </div>
+                </a>
+                <a href="library2.html" class="a1">
+                    <div class="elements">
+                        <img src="Img/IMG_20220718_040823.jpg">
+                        <p>Testando</p>
+                    </div>
+                </a>
+                <a href="library2.html" class="a1">
+                    <div class="elements">
+                        <img src="Img/IMG_20220718_040823.jpg">
+                        <p>Testando</p>
+                    </div>
+                </a>
+                <a href="library2.html" class="a1">
+                    <div class="elements">
+                        <img src="Img/IMG_20220718_040823.jpg">
+                        <p>Testando</p>
+                    </div>
+                </a>
+                <a href="#" class="a1">
+                    <div class="elements">
+                        <img src="Img/IMG_20220718_040823.jpg">
+                        <p>Testando</p>
+                    </div>
+                </a>
+                <a href="library2.html" class="a1">
+                    <div class="elements">
+                        <img src="Img/IMG_20220718_040823.jpg">
+                        <p>Testando</p>
+                    </div>
+                </a>
+            </div>
+            <div class="madeforyou">
+                <div class="boxdamade"><a id="madeforyou">Made For You</a></div>
+                <a id="show-all">Show all</a>
+            </div>
+            <div class="madeinboxes">
+                <a href="#" class="amadeinboxes">
+                    <div class="madeboxes">
+                        <img class="img2" src="Img/IMG_20220718_040823.jpg">
+                        <p class="text2">Dj XXX, XXX</p>
+                    </div>
+                </a>
+                <a href="#" class="amadeinboxes">
+                    <div class="madeboxes">
+                        <img class="img2" src="Img/IMG_20220718_040823.jpg">
+                        <p class="text2">Dj XXX, XXX</p>
+                    </div>
+                </a>
+                <a href="#" class="amadeinboxes">
+                    <div class="madeboxes">
+                        <img class="img2" src="Img/IMG_20220718_040823.jpg">
+                        <p class="text2">Dj XXX, XXX</p>
+                    </div>
+                </a>
+                <a href="#" class="amadeinboxes">
+                    <div class="madeboxes">
+                        <img class="img2" src="Img/IMG_20220718_040823.jpg">
+                        <p class="text2">Dj XXX, XXX</p>
+                    </div>
+                </a>
+                <a href="#" class="amadeinboxes">
+                    <div class="madeboxes">
+                        <img class="img2" src="Img/IMG_20220718_040823.jpg">
+                        <p class="text2">Dj XXX, XXX</p>
+                    </div>
+                </a>
+                    <a href="#" class="amadeinboxes">
+                        <div class="madeboxes">
+                            <img class="img2" src="Img/IMG_20220718_040823.jpg">
+                            <p class="text2">Dj XXX, XXX</p>
+                        </div>
+                    </a>
+            </div>
+            <div class="madeforyou">
+                <div class="boxdamade"><a id="madeforyou">Recently Played</a></div>
+                <a id="show-all">Show all</a>
+            </div>
+            <div class="madeinboxes">
+                <a href="#" class="amadeinboxes">
+                    <div class="madeboxes">
+                        <img class="img2" src="Img/IMG_20220718_040823.jpg">
+                        <p class="text2">Dj XXX, XXX</p>
+                    </div>
+                </a>
+                <a href="#" class="amadeinboxes">
+                    <div class="madeboxes">
+                        <img class="img2" src="Img/IMG_20220718_040823.jpg">
+                        <p class="text2">Dj XXX, XXX</p>
+                    </div>
+                </a>
+                <a href="#" class="amadeinboxes">
+                    <div class="madeboxes">
+                        <img class="img2" src="Img/IMG_20220718_040823.jpg">
+                        <p class="text2">Dj XXX, XXX</p>
+                    </div>
+                </a>
+                <a href="#" class="amadeinboxes">
+                    <div class="madeboxes">
+                        <img class="img2" src="Img/IMG_20220718_040823.jpg">
+                        <p class="text2">Dj XXX, XXX</p>
+                    </div>
+                </a>
+                <a href="#" class="amadeinboxes">
+                    <div class="madeboxes">
+                        <img class="img2" src="Img/IMG_20220718_040823.jpg">
+                        <p class="text2">Dj XXX, XXX</p>
+                    </div>
+                </a>
+                    <a href="#" class="amadeinboxes">
+                        <div class="madeboxes">
+                            <img class="img2" src="Img/IMG_20220718_040823.jpg">
+                            <p class="text2">Dj XXX, XXX</p>
+                        </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer111">
+            <div class="footer222">
+                <div class="footer333">
+                    <div class="footermusicimg">
+                        <img src="Img/IMG_20220718_040823.jpg" alt="">
+                    </div>
+                    <div class="footernames">
+                        <a class="footermusic" href="">Music Playing</a>
+                        <a class="footerautor" href="">Autor Name</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fouter111">
+            <div class="fouter222">
+                <div class="fouter333">
+                    <button class="btn1">
+                        <img src="Img/Shuffle.png" style="width: 15px;" alt="" class="playbackimg">
+                    </button>
+                    <button class="btn1">
+                        <img src="Img/Back.png" style="width: 20px;" alt="" class="playbackimg ">
+                    </button>
+                    <button class="btn1" class="btn1">
+                        <div class="centerbutonpause">
+                            <img src="Img/Play.png" id="footerimgplay" onclick="footerimgclick()" style="width: 15px;" alt="" class="centerplaybackimg">
+                        </div>
+                    </button>
+                    <button class="btn1">
+                        <img src="Img/Next.png" style="width: 20px;" alt="" class="playbackimg">
+                    </button>
+                    <button class="btn1">
+                        <img src="Img/Repeat.png" style="width: 15px;" alt="" class="playbackimg">
+                    </button>
+                </div>
+                <div class="fouter444">
+                    <div class="fouter555">
+                        <span class="time-start">0:00</span>
+                        <input type="range" min="0" max="100" value="30" class="progress-bar">
+                        <span class="time-end">2:00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fuoter000">
+            <div class="fuoter111">
+                <div class="fuoter333">
+                    <button class="btn1">
+                        <img src="Img/Play.png" id="footercolorid" class="footerimg1 playbuttonarrow mudarcorclass" style="width: 25px;" alt="" onclick="colormodimg()">
+                    </button>
+                    <button class="btn1">
+                        <img src="Img/Lyrics.png" class="footerimg" style="width: 20px;" alt="">
+                    </button>
+                    <button class="btn1">
+                        <img src="Img/Sub-play.png" class="footerimg" style="width: 25px;" alt="">
+                    </button>
+                    <button class="btn1">
+                        <img src="Img/Mute-volume.png" class="footerimg" style="width: 20px;" alt="">
+                    </button>
+                    <div class="progress-container">
+                        <input type="range" min="0" max="100" value="30" class="music-bar">
+                    </div>
+                    <button class="btn1">
+                        <img src="Img/Picture-in.png" class="footerimg" style="width: 20px;" alt="">
+                    </button>
+                    <a href="fullscreen.html">
+                        <img src="Img/Full-screen.png" class="footerimg" style="width: 20px;" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="home.js"></script>
+
+</body>
+</html>

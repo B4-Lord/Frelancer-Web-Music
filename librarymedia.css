@@ -1,0 +1,286 @@
+/*  
+  Author: B4_Lord
+  Project: Landing Spotify Clone Page
+  Instagram: @b4__lord
+  Github: https://github.com/B4-Lord
+*/
+
+@media (max-height: 1080px) {
+    .sexosoes {
+        height: 83.9%;
+    }
+}
+
+@media (max-height: 980px) {
+    .sexosoes {
+        height: 82.2%;
+    }
+}
+
+@media (max-height: 1080px) {
+    .sexosoes {
+        height: 83.9%;
+    }
+}
+
+@media (max-height: 1055px) {
+    .sexosoes {
+        height: 83.4%;
+    }
+}
+
+@media (max-height: 1037px) {
+    .sexosoes {
+        height: 83.3%;
+    }
+}
+
+@media (max-height: 1022px) {
+    .sexosoes {
+        height: 82.9%;
+    }
+}
+
+@media (max-height: 1012px) {
+    .sexosoes {
+        height: 82.7%;
+    }
+}
+
+@media (max-height: 996px) {
+    .sexosoes {
+        height: 82.5%;
+    }
+}
+
+@media (max-height: 980px) {
+    .sexosoes {
+        height: 82.2%;
+    }
+}
+
+@media (max-height: 967px) {
+    .sexosoes {
+        height: 82.0%;
+    }
+}
+
+@media (max-height: 959px) {
+    .sexosoes {
+        height: 82%;
+    }
+}
+
+@media (max-height: 954px) {
+    .sexosoes {
+        height: 81.8%;
+    }
+}
+
+@media (max-height: 941px) {
+    .sexosoes {
+        height: 81.5%;
+    }
+}
+
+@media (max-height: 938px) {
+    .sexosoes {
+        height: 81.4%;
+    }
+}
+
+@media (max-height: 928px) {
+    .sexosoes {
+        height: 81.3%;
+    }
+}
+
+@media (max-height: 922px) {
+    .sexosoes {
+        height: 81.1%;
+    }
+}
+
+
+@media (max-height: 916px) {
+    .sexosoes {
+        height: 80.9%;
+    }
+}
+
+@media (max-height: 905px) {
+    .sexosoes {
+        height: 80.8%;
+    }
+}
+
+
+ /* WIDTH */
+
+ @media (max-width: 1454px) {
+    .sexosoes {
+        height: 78.9%;
+    }
+}
+
+@media (max-width: 1447px) {
+    .sexosoes {
+        height: 76.9%;
+    }
+}
+
+@media (max-width: 1220px) {
+    .sexosoes {
+        height: 76.9%;
+    }
+    
+}
+ 
+@media (max-width: 1001px) {
+    .sexosoes {
+        height: 71.6%;
+    }
+    
+}
+
+@media (max-width: 1860px) {
+    .text-active {
+        width: 77.8% !important;
+    }
+}
+
+@media (max-width: 1734px) { 
+    .text-active {
+        width: 77.7% !important;
+    }
+}
+@media (max-width: 1604px) { 
+    .text-active {
+        width: 77.57% !important;
+    }
+}
+
+@media (max-width: 1591px) { 
+    .text-active {
+        width: 77.5% !important;
+    }
+}
+
+@media (max-width: 1427px) { 
+    .text-active {
+        width: 77.3% !important;
+    }
+
+    .simbolus2 {
+        display: none !important; 
+    }
+}
+
+@media (max-width: 1295px) { 
+    .text-active {
+        width: 77.1% !important;
+    }
+}
+
+@media (max-width: 1245px) { 
+    .text-active {
+        width: 77.0% !important;
+    }
+}
+
+@media (max-width: 1190px) { 
+    .text-active {
+        width: 76.5% !important;
+    }
+}
+
+@media (max-width: 1176px) { 
+    .text-active {
+        width: 76.4% !important;
+    }
+}
+
+@media (max-width: 1138px) { 
+    .text-active {
+        width: 76.3% !important;
+    }
+}
+
+@media (max-width: 1048px) { 
+    .text-active {
+        width: 76.4% !important;
+    }
+}
+
+@media (max-width: 945px) { 
+    
+    .playlist {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .text-active {
+        width: 73% !important;
+    }
+}
+@media (max-width: 996px) { 
+    .text-active {
+        width: 76.3% !important;
+    }
+
+    .elements img { 
+        margin-right: 15px;
+    }
+}
+
+
+@media (max-width: 859px) { 
+    .text-active {
+        width: 75.6% !important;
+    }
+}
+
+@media (max-width: 835px) {
+    .input-with-icon {
+        width: 300px;
+    }
+}
+
+@media (max-width: 814px) { 
+    .text-active {
+        width: 75.4% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .playlist {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .text-active {
+        width: 75.1% !important;
+    }
+
+    nav ul {
+        padding: 0 10px;
+    }
+
+    .input-with-icon {
+        width: 300px; 
+    }
+
+    .imagemdabarra {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 700px) {
+    .input-with-icon {
+        width: 250px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .playlist {
+        grid-template-columns: 1fr; 
+    }
+}
