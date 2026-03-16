@@ -10,6 +10,14 @@ A aplicação apresenta uma interface web onde o usuário pode navegar por conte
 
 ---
 
+## 🌐 Acesse o Projeto Online
+
+Você pode visualizar o projeto funcionando através do GitHub Pages:
+
+🔗 **https://b4-lord.github.io/Frelancer-Web-Music/**
+
+---
+
 ## 🚀 Tecnologias Utilizadas
 
 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
@@ -78,9 +86,11 @@ Conforme eu avanço nos estudos de desenvolvimento web, também pretendo impleme
 
 Essas melhorias irão transformar o projeto em uma aplicação mais completa, aproximando-o de uma plataforma profissional de streaming musical.
 
+---
+
 ## 📚 Finalidade Educacional
 
-Este projeto foi desenvolvido com finalidade **educacional**, pois atualmente estou **aprendendo e evoluindo na área de programação e desenvolvimento web**.
+Este projeto foi desenvolvido com finalidade **educacional**, pois atualmente estou **aprendendo e evoluindo na área de programação e desenvolvimento web**.  
 Ele serve como forma de praticar conceitos, testar ideias e construir experiência no desenvolvimento de aplicações.
 
 ---
