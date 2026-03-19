@@ -108,6 +108,6 @@ Projeto desenvolvido por **B4 Lord**.
 ## 📸 Preview do Projeto
 
 <p align="center">
-  <img src="Project Folder Img/BlackTheme.png" width="45%" alt="Tela do projeto">
-  <img src="Project Folder Img/WhiteTheme.png" width="45%" alt="Interface do projeto">
+  <img src="Project Folder Page/Img/BlackTheme.png" width="45%" alt="Tela do projeto">
+  <img src="Project Folder Page/Img/WhiteTheme.png" width="45%" alt="Interface do projeto">
 </p>
